@@ -6,7 +6,7 @@ Part 1
 5. Code returns an error due to the fact that const variables cannot be reassigned, and we have attemped to reassign this variable when performing the addition to it in the next line, resulting in a TypeError.
 6. Returns an error due to the fact that const variables have a block scope, meaning they cannot be accessed outside of the function they were declared in. This is why we get an error since this line tries to access it outside of the function it was declared in. 
 
-**Part 2**
+**Part 2: A Little More of a Challenge**
 
 1. Line 12 prints variable i (var) to the console, and since the for loop above declares this variable starting from 0 to the length of the prices array, the loop terminates once var i is less than 3. Once i increments to 3, that condition is false and will print 3. Line 12 does not cause an error since var variables are accessible anywhere in the function scope, which includes outside of the for loop.
 2. The last element in the prices array is 300, so entering the for loop, discountedPrice is created again and set to 150 since 300 * (1-1/2) = 150. At the end of the loop, the value 150 is printed at line 13 and does not cause an error since var variables are accessible anywhere within the scope of the function. 
